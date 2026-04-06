@@ -121,6 +121,36 @@
             "optional": true
         },
         {
+            "name": "ftb-library-forge-2001.2.12.jar",
+            "path": "mods/ftb-library-forge-2001.2.12.jar",
+            "sha512": "6c2c88ce9e456197895b32a8995adf13a1923c5a35c967593308af1322bb47136fc92305f350544febcc05d0227d2a3f282d9e9d4c8ec5aacdc36176af78809b",
+            "type": "temp"
+        },
+        {
+            "name": "ftb-teams-forge-2001.3.2.jar",
+            "path": "mods/ftb-teams-forge-2001.3.2.jar",
+            "sha512": "45f8980fa1cfcb7cd772f6a03abb0ac680f7c502dc569839e325553dcaa9105148a2c27a214cd1f1131f6b06bca957f8dd01dfb4a1ccb8e13d49502513480cae",
+            "type": "temp"
+        },
+        {
+            "name": "offlineskins-1.20.1-v1.jar",
+            "path": "mods/offlineskins-1.20.1-v1.jar",
+            "sha512": "64abbd278033cc429e17bd2397138ba6e5c09e796fdc4866e07482035d18a990de3a0d4f6cf3e963257ffa65ecd5240bd8cffdb51d6f2d073d9cfa67b6db6b11",
+            "type": "temp"
+        },
+        {
+            "name": "voicechat-forge-1.20.1-2.6.14.jar",
+            "path": "mods/voicechat-forge-1.20.1-2.6.14.jar",
+            "sha512": "aab74d15ec52100401daed97baf913e542e6a8e2f558259233bbc2705284a186b5ead98a319001b17852cd45726b6610c2e34ad7e534ba715eaf2698fcddb9ec",
+            "type": "temp"
+        },
+        {
+            "name": "worldedit-mod-7.2.15.jar",
+            "path": "mods/worldedit-mod-7.2.15.jar",
+            "sha512": "2c41dcd9a622f948ed5409eecc485018fbf274945bdd1a9c0fdf4c4954f9a47dc311e6e0f9e445180d8b771e4a40947533d67bd66feb4ab8c8f87c2880dba7ef",
+            "type": "temp"
+        },
+        {
             "name": "Default-Dark-Mode-1.20-2023.7.0.zip",
             "path": "resourcepacks/Default-Dark-Mode-1.20-2023.7.0.zip",
             "sha512": "52012b320a1d6e7c5c1e391cd475cc8d733b954a99f227131c2a7271198b403c3e2ce06cbfacb61328936c7618792a6a6a6ce557a1f82bbf95232e19dec1306e",
@@ -151,10 +181,101 @@
             "type": "temp"
         },
         {
-            "name": "create",
-            "url": "https://cdn.modrinth.com/data/LNytGWDc/versions/8amzvn9x/create-1.20.1-6.0.8.jar",
-            "sha512": "5b51f5d31437d9bfbf221b67459abd87260d284874e1e23b7ed1d522b23a48059a3b1d2c1c541428da35dc6be15561b4f3c7f36aac6df3a0e8db6a278f6b0316",
-            "path": "mods/create-1.20.1-6.0.8.jar",
+            "name": "ambientsounds",
+            "url": "https://cdn.modrinth.com/data/fM515JnW/versions/viZ543s0/AmbientSounds_FORGE_v6.3.4_mc1.20.1.jar",
+            "sha512": "ae49643430fd3d8b2efd295db912c79eb557b470c99cfa0d3cb38fa27cf5fa42b7db20bd85c877469db3bae000c11329e94adf44da60438c36c95a296e1bc49b",
+            "path": "mods/AmbientSounds_FORGE_v6.3.4_mc1.20.1.jar",
+            "type": "modification"
+        },
+        {
+            "name": "appleskin",
+            "url": "https://cdn.modrinth.com/data/EsAfCjCV/versions/XdXDExVF/appleskin-forge-mc1.20.1-2.5.1.jar",
+            "sha512": "3176f928fb6c60d27f5edb610ca4ab0236175404eebf32797a1ec6cdd794bb294a260231579578536d03571377e43c6181adc75d8dd2c0733f17fce4f7e636b9",
+            "path": "mods/appleskin-forge-mc1.20.1-2.5.1.jar",
+            "type": "modification"
+        },
+        {
+            "name": "architectury-api",
+            "url": "https://cdn.modrinth.com/data/lhGA9TYQ/versions/1MKTLiiG/architectury-9.2.14-forge.jar",
+            "sha512": "cf67f2050cafa00f0bee42e6d7bef77fdb808ac4f71742f7b4d6d5c1e6ffb49561a5a252f332d2b78a9767bdb5faa284611790dba303fbdc736ae36d794f61c7",
+            "path": "mods/architectury-9.2.14-forge.jar",
+            "type": "modification"
+        },
+        {
+            "name": "creativecore",
+            "url": "https://cdn.modrinth.com/data/OsZiaDHq/versions/p6pvilEm/CreativeCore_FORGE_v2.12.35_mc1.20.1.jar",
+            "sha512": "e3b00bc24856aaf931392f7bf2fdab8c492341ff2654fa513e0fef6df89927db7441b740ab8583d89e6b03d503e2ded656429491c464df3da6e16a004be94823",
+            "path": "mods/CreativeCore_FORGE_v2.12.35_mc1.20.1.jar",
+            "type": "modification"
+        },
+        {
+            "name": "embeddium",
+            "url": "https://cdn.modrinth.com/data/sk9rgfiA/versions/UTbfe5d1/embeddium-0.3.31%2Bmc1.20.1.jar",
+            "sha512": "ffbf2da4685260a4d5c14c621708bd20722563f084f042d3dfb0a7b87f048e39299648c854a93939129da0d23a15a91ec628560d601e76074b08e275f6e132e9",
+            "path": "mods/embeddium-0.3.31+mc1.20.1.jar",
+            "type": "modification"
+        },
+        {
+            "name": "enhancedvisuals",
+            "url": "https://cdn.modrinth.com/data/KjL0jE2w/versions/m3cjYtkA/EnhancedVisuals_FORGE_v1.8.2_mc1.20.1.jar",
+            "sha512": "d3e6fca63651f262b07a75053453beb8ccf963f096a8aaffef13cc16a27666e3b31bb4eab36282c27b3c7586b030cb53f74b7534f756c26d5f2b9b745cc39941",
+            "path": "mods/EnhancedVisuals_FORGE_v1.8.2_mc1.20.1.jar",
+            "type": "modification"
+        },
+        {
+            "name": "entityculling",
+            "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/2bbjEAea/entityculling-forge-1.10.0-mc1.20.1.jar",
+            "sha512": "af2a989a8be0892cc13e13412aa4dfc2145c97431d333ccd3ea7f192440758cb195404523706b74d262671df591ca6857edd45ceb1e4de17b4ae3e8e8073fbeb",
+            "path": "mods/entityculling-forge-1.10.0-mc1.20.1.jar",
+            "type": "modification"
+        },
+        {
+            "name": "ferrite-core",
+            "url": "https://cdn.modrinth.com/data/uXXizFIs/versions/DG5Fn9Sz/ferritecore-6.0.1-forge.jar",
+            "sha512": "a1960a7c03dc32d4ccaccaf28afdd9b078758bbd62d15a91d4039a83fa9397a098e89b69591f6bd5190254d9ee97e502504154b9aec764adb8c65f000b75ba2c",
+            "path": "mods/ferritecore-6.0.1-forge.jar",
+            "type": "modification"
+        },
+        {
+            "name": "jei",
+            "url": "https://cdn.modrinth.com/data/u6dRKJwZ/versions/p7yZWpEg/jei-1.20.1-forge-15.20.0.129.jar",
+            "sha512": "280dff664abf3c04ecdf9e13a49619a25b7ba1c1f9d0f5c47394a4f9f71dc96628cf2e73de2143b75a16955e820de11dd87e06a6902088f2fbc4a48da92555a4",
+            "path": "mods/jei-1.20.1-forge-15.20.0.129.jar",
+            "type": "modification"
+        },
+        {
+            "name": "modernfix",
+            "url": "https://cdn.modrinth.com/data/nmDcB62a/versions/Uvlhuprw/modernfix-forge-5.26.2%2Bmc1.20.1.jar",
+            "sha512": "46e6fb85c3097d3dedca0409fda83d58b3724a0905a5f5417b8bfaa2cb8bce388e6d42c762ee615413a9bc2692fa4b302d7e2405fe6fd7ad82c9def6a5da9028",
+            "path": "mods/modernfix-forge-5.26.2+mc1.20.1.jar",
+            "type": "modification"
+        },
+        {
+            "name": "oculus",
+            "url": "https://cdn.modrinth.com/data/GchcoXML/versions/iQ1SwGc3/oculus-mc1.20.1-1.8.0.jar",
+            "sha512": "1bb4ac77400d6684347988ed298a692c2cb15cf7923693607eb8739b171a20fef7412259e9e157111d9ce21779badab386029956f7d2283a9e611722a373e9d5",
+            "path": "mods/oculus-mc1.20.1-1.8.0.jar",
+            "type": "modification"
+        },
+        {
+            "name": "timeless-and-classics-zero",
+            "url": "https://cdn.modrinth.com/data/SzzJttH8/versions/3NpuJ7TJ/tacz-1.20.1-1.1.7-hotfix2.jar",
+            "sha512": "1e174634668f031b591885275b0a8b7007ec6747faf4156fc8e3044a4ab7c21930eb19542cc647eedcf4d089e92938e243cf802380d4deb5010235bfd7389f0d",
+            "path": "mods/tacz-1.20.1-1.1.7-hotfix2.jar",
+            "type": "modification"
+        },
+        {
+            "name": "xaeros-minimap",
+            "url": "https://cdn.modrinth.com/data/1bokaNcj/versions/iMXAV165/xaerominimap-forge-1.20.1-25.3.10.jar",
+            "sha512": "ad7d8e38419c91f77ac09a77c3972256977458ef50c5560b1d11f293b2a6ff4d04dee8ebfaa2688776c3db9a64e946f835229ebd0d89391e39bee5ad16bebd0a",
+            "path": "mods/xaerominimap-forge-1.20.1-25.3.10.jar",
+            "type": "modification"
+        },
+        {
+            "name": "xaeros-world-map",
+            "url": "https://cdn.modrinth.com/data/NcUtCpym/versions/vUbAYOnm/xaeroworldmap-forge-1.20.1-1.40.11.jar",
+            "sha512": "210376e3377a7c75ecd5ccaa509cf1d574ff5e2fb833ac93060423efd6104a0a435bd0e8804ee2d17f9bd60bd0d1267cfe9ee42435db18f12f4f87aca67c8900",
+            "path": "mods/xaeroworldmap-forge-1.20.1-1.40.11.jar",
             "type": "modification"
         }
     ]
