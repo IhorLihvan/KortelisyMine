@@ -277,6 +277,13 @@
             "sha512": "210376e3377a7c75ecd5ccaa509cf1d574ff5e2fb833ac93060423efd6104a0a435bd0e8804ee2d17f9bd60bd0d1267cfe9ee42435db18f12f4f87aca67c8900",
             "path": "mods/xaeroworldmap-forge-1.20.1-1.40.11.jar",
             "type": "modification"
+        },
+        {
+            "name": "create",
+            "url": "https://cdn.modrinth.com/data/LNytGWDc/versions/8amzvn9x/create-1.20.1-6.0.8.jar",
+            "sha512": "5b51f5d31437d9bfbf221b67459abd87260d284874e1e23b7ed1d522b23a48059a3b1d2c1c541428da35dc6be15561b4f3c7f36aac6df3a0e8db6a278f6b0316",
+            "path": "mods/create-1.20.1-6.0.8.jar",
+            "type": "modification"
         }
     ]
 }
