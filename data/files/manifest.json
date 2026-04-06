@@ -2,226 +2,182 @@
     "version": "1.0.0",
     "files": [
         {
+            "name": "options.txt",
             "path": "options.txt",
-            "sha256": "9bc9aad42dae60501aff6a839d498d8994671f9feb5df5169668ec3c2f82f050",
-            "url": "options.txt",
+            "sha512": "e6525b5d91e84dbed14a6adee99e5302ed3bed73e9c31f1234216576041d9ada2bab5fc7408e0884a4a83f7babe6b1b6a3779e6d5fb963727cf3164829757e04",
+            "url": "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/options.txt",
+            "type": "temp",
             "optional": true
         },
         {
+            "name": "oculus.properties",
             "path": "config/oculus.properties",
-            "sha256": "a315811ad8e709f3bd54f5d4618fa977e758115f6746e83c4b7103d6737054e1",
-            "url": "config/oculus.properties",
+            "sha512": "ffb916ccd2cd96658eaf7e77fba12d5036bd629d552814cd03d8892b0fdb5c20ab65d2dc048f8023866ec8449f3c4d2b5b8ee6db830ccf8f8df3f732d813faf8",
+            "url": "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/config/oculus.properties",
+            "type": "temp",
             "optional": true
         },
         {
+            "name": "client.cfg",
             "path": "config/xaero/lib/client.cfg",
-            "sha256": "43ed9dbfa5b4d6f0f3d2e8c2ced17ad298164b22c68ff11d415257a39b074336",
-            "url": "config/xaero/lib/client.cfg",
+            "sha512": "8bcacd639b80d30b5d55a0e71348dc1d48f3e9563ad205211b482002eae0039c66e8d17aae7999d9a4c45d6b738f66e17ec48cd0fffb3fcff530f44c60f762b9",
+            "url": "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/config/xaero/lib/client.cfg",
+            "type": "temp",
             "optional": true
         },
         {
+            "name": "common.cfg",
             "path": "config/xaero/lib/common.cfg",
-            "sha256": "98f698d96a6d21d830a455b4ad045b70516fa63c298021742d8499e7f0366cd2",
-            "url": "config/xaero/lib/common.cfg",
+            "sha512": "f96923591a8d8140f4f38ccdabd92b4c35400b2792025fd29b2f476d27b098930e5c63b305517c3990d0cb08646e66f8a00759414a4c6bb6dbc3cb69d7c74979",
+            "url": "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/config/xaero/lib/common.cfg",
+            "type": "temp",
             "optional": true
         },
         {
+            "name": "default.cfg",
             "path": "config/xaero/lib/profiles/default.cfg",
-            "sha256": "34ae854b17d896d7cb853bdc28c27231a3947e91cb9f0991f372846ee3c2a907",
-            "url": "config/xaero/lib/profiles/default.cfg",
+            "sha512": "dfcb50d163627f7e665b09cce98b373880000e9cb770afb9fc099fada6c3493b2b2734d247749f35dfe284d460878d3a28880d8002b9146cba9359430d97857c",
+            "url": "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/config/xaero/lib/profiles/default.cfg",
+            "type": "temp",
             "optional": true
         },
         {
+            "name": "default.cfg",
             "path": "config/xaero/lib/server_profiles/default.cfg",
-            "sha256": "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a",
-            "url": "config/xaero/lib/server_profiles/default.cfg",
+            "sha512": "dcc833204502a2f9273af7b356ddfcfc09739b9ae244951e64b8408411301b2f3301265e756da70ba984da73d254d4b12b67877e053de91aab1d7aa9e1172a4d",
+            "url": "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/config/xaero/lib/server_profiles/default.cfg",
+            "type": "temp",
             "optional": true
         },
         {
+            "name": "client.cfg",
             "path": "config/xaero/minimap/client.cfg",
-            "sha256": "c0915eff5d1a7905cd1038d646eb9086fd1a29e2f637d53535e4da161de17b9f",
-            "url": "config/xaero/minimap/client.cfg",
+            "sha512": "75f5b2591ed796aecc902b067881ac57016dab3b07df4194f97d217b53e41a1ab4269231fdea5f302eaa9acf6c7e0891f940cb86c74b20f24284387044dd7072",
+            "url": "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/config/xaero/minimap/client.cfg",
+            "type": "temp",
             "optional": true
         },
         {
+            "name": "common.cfg",
             "path": "config/xaero/minimap/common.cfg",
-            "sha256": "2b49df024c03a369c62a303c72755e7fedeb4f4653ff53a12fd37bd83ccd4ed0",
-            "url": "config/xaero/minimap/common.cfg",
+            "sha512": "245ab446281badd57ffab2b1d54535fc6bce50c3de35a11369189a381a9058cc52fa3a8d1574aae36b328b11583ef66408878ec54361f865bba178fcfa7fc9f4",
+            "url": "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/config/xaero/minimap/common.cfg",
+            "type": "temp",
             "optional": true
         },
         {
+            "name": "default_radar_categories_client.json",
             "path": "config/xaero/minimap/default_radar_categories_client.json",
-            "sha256": "b8ddf54611a9ab8c53177fc0d062321e9e731192b65b9e50d0fcb38a86a91696",
-            "url": "config/xaero/minimap/default_radar_categories_client.json",
+            "sha512": "d397f25b6ce59f8c32573ec9e3c54663f2b3ae3ca10b9d58d15ea66391b9e20192da19ab77eb3d41540d78868042b415e2d84ea1c17b6cbd3901cfe236651058",
+            "url": "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/config/xaero/minimap/default_radar_categories_client.json",
+            "type": "temp",
             "optional": true
         },
         {
+            "name": "default_radar_categories_server.json",
             "path": "config/xaero/minimap/default_radar_categories_server.json",
-            "sha256": "a4c652cafa7dea324e5f5cf3b1df46a84e54b6d4f877195857bce55a559c1cfd",
-            "url": "config/xaero/minimap/default_radar_categories_server.json",
+            "sha512": "b553829d587ec9ec121f4a0301fa6830307d36927533cf44c0967d0b72f49033a8f6228a478bef2a3c3d67e981e309fa97b8e19ec10b709e2c08d548e0828c7c",
+            "url": "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/config/xaero/minimap/default_radar_categories_server.json",
+            "type": "temp",
             "optional": true
         },
         {
+            "name": "default.cfg",
             "path": "config/xaero/minimap/profiles/default.cfg",
-            "sha256": "2b7b638dd3e0dd92e95c3bbb1caa10e67aa415fe07a65971a27e0a759ea875b7",
-            "url": "config/xaero/minimap/profiles/default.cfg",
+            "sha512": "209654f1c3d352fb967de823f3824faf1a51bbba6472951c6d2c3a4c47ca3f9c16dc2af43230adfba1d871db5d71b871530a5e694fc04a50d13c796cd0f60d67",
+            "url": "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/config/xaero/minimap/profiles/default.cfg",
+            "type": "temp",
             "optional": true
         },
         {
+            "name": "default.cfg.txt",
             "path": "config/xaero/minimap/profiles/info_display_config/default.cfg.txt",
-            "sha256": "184e654fa1fc8ad09943c97c4e65ab78acb5b3cfca22417a831513d1b6d9bbc6",
-            "url": "config/xaero/minimap/profiles/info_display_config/default.cfg.txt",
+            "sha512": "1e7f9564cbd2c2087cafd22abbe682c0efac917214f54a7b50d132049cde60b1e88994028b5a68810b496ee71cecd963b86cfbfdd190b41967ab8c100ea71e41",
+            "url": "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/config/xaero/minimap/profiles/info_display_config/default.cfg.txt",
+            "type": "temp",
             "optional": true
         },
         {
+            "name": "default.cfg",
             "path": "config/xaero/minimap/server_profiles/default.cfg",
-            "sha256": "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a",
-            "url": "config/xaero/minimap/server_profiles/default.cfg",
+            "sha512": "dcc833204502a2f9273af7b356ddfcfc09739b9ae244951e64b8408411301b2f3301265e756da70ba984da73d254d4b12b67877e053de91aab1d7aa9e1172a4d",
+            "url": "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/config/xaero/minimap/server_profiles/default.cfg",
+            "type": "temp",
             "optional": true
         },
         {
+            "name": "client.cfg",
             "path": "config/xaero/world-map/client.cfg",
-            "sha256": "deece0fe0d29f2203a9699143a6209c451e91d7ecb799489c328b0d0fa31a90d",
-            "url": "config/xaero/world-map/client.cfg",
+            "sha512": "da0f5f418e2c0decadf3364a069fe8846096eb30af720dd3de73e693b9022f5d751682a2c29de129fc3a1d3fbda7ac1a30caf90cfd8672df062b49b92d71580c",
+            "url": "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/config/xaero/world-map/client.cfg",
+            "type": "temp",
             "optional": true
         },
         {
+            "name": "common.cfg",
             "path": "config/xaero/world-map/common.cfg",
-            "sha256": "0c229eb0daf85bd09af51f21eeeb99497a3bd50a825d5ab1ca695fb21bf6cf9d",
-            "url": "config/xaero/world-map/common.cfg",
+            "sha512": "0c058955f709de0995631040058608b9f658a8cc19b96957173bc3d2e122ace9f7b000cdd420839cd6bb02a9ca719da35c5ec9cb0e730014bd029a31897917eb",
+            "url": "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/config/xaero/world-map/common.cfg",
+            "type": "temp",
             "optional": true
         },
         {
+            "name": "default.cfg",
             "path": "config/xaero/world-map/profiles/default.cfg",
-            "sha256": "7b24c882801bcc7f0a8aedc625d419f661fa490fa0e9d5ebe39599a1ce2dcbd5",
-            "url": "config/xaero/world-map/profiles/default.cfg",
+            "sha512": "4d3dffbc0c96f17cc5673142af4038e55456c1d57f12d65416ce8fa349f001b13f91eae20d7369422bc0a6a67a623644f6fe5925327c0271266e65246e56d32b",
+            "url": "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/config/xaero/world-map/profiles/default.cfg",
+            "type": "temp",
             "optional": true
         },
         {
+            "name": "default.cfg",
             "path": "config/xaero/world-map/server_profiles/default.cfg",
-            "sha256": "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a",
-            "url": "config/xaero/world-map/server_profiles/default.cfg",
+            "sha512": "dcc833204502a2f9273af7b356ddfcfc09739b9ae244951e64b8408411301b2f3301265e756da70ba984da73d254d4b12b67877e053de91aab1d7aa9e1172a4d",
+            "url": "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/config/xaero/world-map/server_profiles/default.cfg",
+            "type": "temp",
             "optional": true
         },
         {
-            "path": "mods/AmbientSounds_FORGE_v6.3.4_mc1.20.1.jar",
-            "sha256": "1368504e00bc50ba268d0f73558176889000ce11cad42dbab12e33a59d645495",
-            "url": "mods/AmbientSounds_FORGE_v6.3.4_mc1.20.1.jar"
-        },
-        {
-            "path": "mods/appleskin-forge-mc1.20.1-2.5.1.jar",
-            "sha256": "e12419e43e3babc810af289403c5cd96bd7f09809b389acc6bb2f122b4b2a426",
-            "url": "mods/appleskin-forge-mc1.20.1-2.5.1.jar"
-        },
-        {
-            "path": "mods/architectury-9.2.14-forge.jar",
-            "sha256": "218b471d0b8a1f6cda14cfc1beb9eeb0df54304500acc6c5613d9b88ec65d9af",
-            "url": "mods/architectury-9.2.14-forge.jar"
-        },
-        {
-            "path": "mods/CreativeCore_FORGE_v2.12.35_mc1.20.1.jar",
-            "sha256": "2c5e9efe5b256b35be24dafea2f8e26e829793fc144e95eeceabf9f1f4e601f2",
-            "url": "mods/CreativeCore_FORGE_v2.12.35_mc1.20.1.jar"
-        },
-        {
-            "path": "mods/embeddium-0.3.31+mc1.20.1.jar",
-            "sha256": "eed3d1325f2acc2fd4e69bb495e5ccb91d962126ac5330f0582ebc2a3daf47fb",
-            "url": "mods/embeddium-0.3.31+mc1.20.1.jar"
-        },
-        {
-            "path": "mods/EnhancedVisuals_FORGE_v1.8.2_mc1.20.1.jar",
-            "sha256": "2590c1a56b1a6c8236d460d637da5fdddf4e2c6a0bc70b9a78c762f3e75e428b",
-            "url": "mods/EnhancedVisuals_FORGE_v1.8.2_mc1.20.1.jar"
-        },
-        {
-            "path": "mods/entityculling-forge-1.10.0-mc1.20.1.jar",
-            "sha256": "dcb672eaefeca825dd43ac258cbbddb179d2434a96578a4b60e34624c33663ec",
-            "url": "mods/entityculling-forge-1.10.0-mc1.20.1.jar"
-        },
-        {
-            "path": "mods/ferritecore-6.0.1-forge.jar",
-            "sha256": "9c2c9396a49e796d88497758caa4637d2bcbb433c318e2dd9cebcffbaf0f6c54",
-            "url": "mods/ferritecore-6.0.1-forge.jar"
-        },
-        {
-            "path": "mods/ftb-library-forge-2001.2.12.jar",
-            "sha256": "f09335944fff8ca3ef37a40e0b125ffb6707759ede258c73f9ce9bac61bfbf96",
-            "url": "mods/ftb-library-forge-2001.2.12.jar"
-        },
-        {
-            "path": "mods/ftb-teams-forge-2001.3.2.jar",
-            "sha256": "b1cb4d82ea9f137a87e12a7aaf3329619294b56f7d70337dfd557a76e10b6e07",
-            "url": "mods/ftb-teams-forge-2001.3.2.jar"
-        },
-        {
-            "path": "mods/jei-1.20.1-forge-15.20.0.129.jar",
-            "sha256": "5e5af05aa082f5844c7b3ed0b3bd9374e160ae1914906f71d90c5656e4e80039",
-            "url": "mods/jei-1.20.1-forge-15.20.0.129.jar"
-        },
-        {
-            "path": "mods/modernfix-forge-5.26.2+mc1.20.1.jar",
-            "sha256": "e9f00f787a78a976b8493eafeee63ff08fadb31bcb0a1e938d7b940d17ac70ae",
-            "url": "mods/modernfix-forge-5.26.2+mc1.20.1.jar"
-        },
-        {
-            "path": "mods/oculus-mc1.20.1-1.8.0.jar",
-            "sha256": "0945df0cba0f62b3901dd80c3268e5311b770ece78c78037a45db12ac0425fef",
-            "url": "mods/oculus-mc1.20.1-1.8.0.jar"
-        },
-        {
-            "path": "mods/offlineskins-1.20.1-v1.jar",
-            "sha256": "ac4eb2a373b83a0383cd89e5dbb763f61776415ccb6371ec168365a8ea1bcddf",
-            "url": "mods/offlineskins-1.20.1-v1.jar"
-        },
-        {
-            "path": "mods/tacz-1.20.1-1.1.7-hotfix2.jar",
-            "sha256": "fc5f1dab09afd5399604db0f60845d41d46cf015c158cbc12e7ef716cf6bdb46",
-            "url": "mods/tacz-1.20.1-1.1.7-hotfix2.jar"
-        },
-        {
-            "path": "mods/voicechat-forge-1.20.1-2.6.14.jar",
-            "sha256": "86b41d79e7ef1c211a60d28cafbc7fe37152f23ab268c0d12ab5ec411b47ba66",
-            "url": "mods/voicechat-forge-1.20.1-2.6.14.jar"
-        },
-        {
-            "path": "mods/worldedit-mod-7.2.15.jar",
-            "sha256": "17db6b3e94f52d25426684663e1e1846823cbb7907f1c365ac329e5bc7bfaf2c",
-            "url": "mods/worldedit-mod-7.2.15.jar"
-        },
-        {
-            "path": "mods/xaerominimap-forge-1.20.1-25.3.10.jar",
-            "sha256": "dd118045c4daa8e27614f576d515ba5b07e4ccae060b6b1a536437f155879c7b",
-            "url": "mods/xaerominimap-forge-1.20.1-25.3.10.jar"
-        },
-        {
-            "path": "mods/xaeroworldmap-forge-1.20.1-1.40.11.jar",
-            "sha256": "d41ea1366e36f79f1b38efb44920fa9354a929eee070c493bda60b0c5cc2b16a",
-            "url": "mods/xaeroworldmap-forge-1.20.1-1.40.11.jar"
-        },
-        {
+            "name": "Default-Dark-Mode-1.20-2023.7.0.zip",
             "path": "resourcepacks/Default-Dark-Mode-1.20-2023.7.0.zip",
-            "sha256": "22a0ad68393273203649d058f1b7788cbdb08b38f6923cd9d6ade8ae33565dc6",
-            "url": "resourcepacks/Default-Dark-Mode-1.20-2023.7.0.zip"
+            "sha512": "52012b320a1d6e7c5c1e391cd475cc8d733b954a99f227131c2a7271198b403c3e2ce06cbfacb61328936c7618792a6a6a6ce557a1f82bbf95232e19dec1306e",
+            "url": "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/resourcepacks/Default-Dark-Mode-1.20-2023.7.0.zip",
+            "type": "temp"
         },
         {
+            "name": "Soft-Weather-1.0-Universal.zip",
             "path": "resourcepacks/Soft-Weather-1.0-Universal.zip",
-            "sha256": "3f47ccac79c0c9ff2f723e4d8061f5881ca5323931be29f9009d42682cdcc1dd",
-            "url": "resourcepacks/Soft-Weather-1.0-Universal.zip"
+            "sha512": "d0fc4e1def1b44669df6e8e30e9a43b6eb1bbf8625166e0fa504f2b473c3d766e7a5280ec198268cfed7851d62b7ae5d67d925e944d3c54d296c7d684f4d02fb",
+            "url": "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/resourcepacks/Soft-Weather-1.0-Universal.zip",
+            "type": "temp"
         },
         {
+            "name": "ComplementaryReimagined_r5.7.1.zip",
             "path": "shaderpacks/ComplementaryReimagined_r5.7.1.zip",
-            "sha256": "24a20634a7832d422d3cd5023be16829f26840e25c69404dd418306ea79f63f0",
-            "url": "shaderpacks/ComplementaryReimagined_r5.7.1.zip"
+            "sha512": "840149dd8aff5d5d06d0d5a4ea83d4ea7f72eab3cb2b02de513c1f3eaa6e4627f68d9c0915b86fa37edad73cafd4648f156f373da52810cd34c67d797e0f6aef",
+            "url": "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/shaderpacks/ComplementaryReimagined_r5.7.1.zip",
+            "type": "temp"
         },
         {
+            "name": "MakeUp-UltraFast-9.4c.zip",
             "path": "shaderpacks/MakeUp-UltraFast-9.4c.zip",
-            "sha256": "f88931d65e971807148d09b71ee4aa85e293184cac94405c7d84350b22cb91d9",
-            "url": "shaderpacks/MakeUp-UltraFast-9.4c.zip"
+            "sha512": "c586c9e73512467140506f369668ef5c6b84122ed176d90e41016d11673e73c899bf8de3b7301d9e294f2aac36428fa87025047384420ca9673e5e5371881b21",
+            "url": "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/shaderpacks/MakeUp-UltraFast-9.4c.zip",
+            "type": "temp"
         },
         {
+            "name": "MakeUp-UltraFast-9.4c.zip.txt",
             "path": "shaderpacks/MakeUp-UltraFast-9.4c.zip.txt",
-            "sha256": "8bf7594760f0936e3fb62a8e00ab136a9b74dc07d0dc0d60f52089684964219e",
-            "url": "shaderpacks/MakeUp-UltraFast-9.4c.zip.txt"
+            "sha512": "cdbce0b3be6204e15c34fe996e05f1cd8dd2d8dbb97be7d38fe49c37c0165bb5932991ee0fe6ba18fb0951746f8bd6bb5673aa1f2f4b2752a07d629b04dd82e0",
+            "url": "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/shaderpacks/MakeUp-UltraFast-9.4c.zip.txt",
+            "type": "temp"
+        },
+        {
+            "name": "create",
+            "url": "https://cdn.modrinth.com/data/LNytGWDc/versions/8amzvn9x/create-1.20.1-6.0.8.jar",
+            "sha512": "5b51f5d31437d9bfbf221b67459abd87260d284874e1e23b7ed1d522b23a48059a3b1d2c1c541428da35dc6be15561b4f3c7f36aac6df3a0e8db6a278f6b0316",
+            "path": "mods/create-1.20.1-6.0.8.jar",
+            "type": "modification"
         }
     ]
 }
