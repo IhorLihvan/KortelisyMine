@@ -1,0 +1,227 @@
+{
+    "version": "1.0.0",
+    "files": [
+        {
+            "path": "options.txt",
+            "sha256": "9bc9aad42dae60501aff6a839d498d8994671f9feb5df5169668ec3c2f82f050",
+            "url": "options.txt",
+            "optional": true
+        },
+        {
+            "path": "config/oculus.properties",
+            "sha256": "a315811ad8e709f3bd54f5d4618fa977e758115f6746e83c4b7103d6737054e1",
+            "url": "config/oculus.properties",
+            "optional": true
+        },
+        {
+            "path": "config/xaero/lib/client.cfg",
+            "sha256": "43ed9dbfa5b4d6f0f3d2e8c2ced17ad298164b22c68ff11d415257a39b074336",
+            "url": "config/xaero/lib/client.cfg",
+            "optional": true
+        },
+        {
+            "path": "config/xaero/lib/common.cfg",
+            "sha256": "98f698d96a6d21d830a455b4ad045b70516fa63c298021742d8499e7f0366cd2",
+            "url": "config/xaero/lib/common.cfg",
+            "optional": true
+        },
+        {
+            "path": "config/xaero/lib/profiles/default.cfg",
+            "sha256": "34ae854b17d896d7cb853bdc28c27231a3947e91cb9f0991f372846ee3c2a907",
+            "url": "config/xaero/lib/profiles/default.cfg",
+            "optional": true
+        },
+        {
+            "path": "config/xaero/lib/server_profiles/default.cfg",
+            "sha256": "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a",
+            "url": "config/xaero/lib/server_profiles/default.cfg",
+            "optional": true
+        },
+        {
+            "path": "config/xaero/minimap/client.cfg",
+            "sha256": "c0915eff5d1a7905cd1038d646eb9086fd1a29e2f637d53535e4da161de17b9f",
+            "url": "config/xaero/minimap/client.cfg",
+            "optional": true
+        },
+        {
+            "path": "config/xaero/minimap/common.cfg",
+            "sha256": "2b49df024c03a369c62a303c72755e7fedeb4f4653ff53a12fd37bd83ccd4ed0",
+            "url": "config/xaero/minimap/common.cfg",
+            "optional": true
+        },
+        {
+            "path": "config/xaero/minimap/default_radar_categories_client.json",
+            "sha256": "b8ddf54611a9ab8c53177fc0d062321e9e731192b65b9e50d0fcb38a86a91696",
+            "url": "config/xaero/minimap/default_radar_categories_client.json",
+            "optional": true
+        },
+        {
+            "path": "config/xaero/minimap/default_radar_categories_server.json",
+            "sha256": "a4c652cafa7dea324e5f5cf3b1df46a84e54b6d4f877195857bce55a559c1cfd",
+            "url": "config/xaero/minimap/default_radar_categories_server.json",
+            "optional": true
+        },
+        {
+            "path": "config/xaero/minimap/profiles/default.cfg",
+            "sha256": "2b7b638dd3e0dd92e95c3bbb1caa10e67aa415fe07a65971a27e0a759ea875b7",
+            "url": "config/xaero/minimap/profiles/default.cfg",
+            "optional": true
+        },
+        {
+            "path": "config/xaero/minimap/profiles/info_display_config/default.cfg.txt",
+            "sha256": "184e654fa1fc8ad09943c97c4e65ab78acb5b3cfca22417a831513d1b6d9bbc6",
+            "url": "config/xaero/minimap/profiles/info_display_config/default.cfg.txt",
+            "optional": true
+        },
+        {
+            "path": "config/xaero/minimap/server_profiles/default.cfg",
+            "sha256": "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a",
+            "url": "config/xaero/minimap/server_profiles/default.cfg",
+            "optional": true
+        },
+        {
+            "path": "config/xaero/world-map/client.cfg",
+            "sha256": "deece0fe0d29f2203a9699143a6209c451e91d7ecb799489c328b0d0fa31a90d",
+            "url": "config/xaero/world-map/client.cfg",
+            "optional": true
+        },
+        {
+            "path": "config/xaero/world-map/common.cfg",
+            "sha256": "0c229eb0daf85bd09af51f21eeeb99497a3bd50a825d5ab1ca695fb21bf6cf9d",
+            "url": "config/xaero/world-map/common.cfg",
+            "optional": true
+        },
+        {
+            "path": "config/xaero/world-map/profiles/default.cfg",
+            "sha256": "7b24c882801bcc7f0a8aedc625d419f661fa490fa0e9d5ebe39599a1ce2dcbd5",
+            "url": "config/xaero/world-map/profiles/default.cfg",
+            "optional": true
+        },
+        {
+            "path": "config/xaero/world-map/server_profiles/default.cfg",
+            "sha256": "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a",
+            "url": "config/xaero/world-map/server_profiles/default.cfg",
+            "optional": true
+        },
+        {
+            "path": "mods/AmbientSounds_FORGE_v6.3.4_mc1.20.1.jar",
+            "sha256": "1368504e00bc50ba268d0f73558176889000ce11cad42dbab12e33a59d645495",
+            "url": "mods/AmbientSounds_FORGE_v6.3.4_mc1.20.1.jar"
+        },
+        {
+            "path": "mods/appleskin-forge-mc1.20.1-2.5.1.jar",
+            "sha256": "e12419e43e3babc810af289403c5cd96bd7f09809b389acc6bb2f122b4b2a426",
+            "url": "mods/appleskin-forge-mc1.20.1-2.5.1.jar"
+        },
+        {
+            "path": "mods/architectury-9.2.14-forge.jar",
+            "sha256": "218b471d0b8a1f6cda14cfc1beb9eeb0df54304500acc6c5613d9b88ec65d9af",
+            "url": "mods/architectury-9.2.14-forge.jar"
+        },
+        {
+            "path": "mods/CreativeCore_FORGE_v2.12.35_mc1.20.1.jar",
+            "sha256": "2c5e9efe5b256b35be24dafea2f8e26e829793fc144e95eeceabf9f1f4e601f2",
+            "url": "mods/CreativeCore_FORGE_v2.12.35_mc1.20.1.jar"
+        },
+        {
+            "path": "mods/embeddium-0.3.31+mc1.20.1.jar",
+            "sha256": "eed3d1325f2acc2fd4e69bb495e5ccb91d962126ac5330f0582ebc2a3daf47fb",
+            "url": "mods/embeddium-0.3.31+mc1.20.1.jar"
+        },
+        {
+            "path": "mods/EnhancedVisuals_FORGE_v1.8.2_mc1.20.1.jar",
+            "sha256": "2590c1a56b1a6c8236d460d637da5fdddf4e2c6a0bc70b9a78c762f3e75e428b",
+            "url": "mods/EnhancedVisuals_FORGE_v1.8.2_mc1.20.1.jar"
+        },
+        {
+            "path": "mods/entityculling-forge-1.10.0-mc1.20.1.jar",
+            "sha256": "dcb672eaefeca825dd43ac258cbbddb179d2434a96578a4b60e34624c33663ec",
+            "url": "mods/entityculling-forge-1.10.0-mc1.20.1.jar"
+        },
+        {
+            "path": "mods/ferritecore-6.0.1-forge.jar",
+            "sha256": "9c2c9396a49e796d88497758caa4637d2bcbb433c318e2dd9cebcffbaf0f6c54",
+            "url": "mods/ferritecore-6.0.1-forge.jar"
+        },
+        {
+            "path": "mods/ftb-library-forge-2001.2.12.jar",
+            "sha256": "f09335944fff8ca3ef37a40e0b125ffb6707759ede258c73f9ce9bac61bfbf96",
+            "url": "mods/ftb-library-forge-2001.2.12.jar"
+        },
+        {
+            "path": "mods/ftb-teams-forge-2001.3.2.jar",
+            "sha256": "b1cb4d82ea9f137a87e12a7aaf3329619294b56f7d70337dfd557a76e10b6e07",
+            "url": "mods/ftb-teams-forge-2001.3.2.jar"
+        },
+        {
+            "path": "mods/jei-1.20.1-forge-15.20.0.129.jar",
+            "sha256": "5e5af05aa082f5844c7b3ed0b3bd9374e160ae1914906f71d90c5656e4e80039",
+            "url": "mods/jei-1.20.1-forge-15.20.0.129.jar"
+        },
+        {
+            "path": "mods/modernfix-forge-5.26.2+mc1.20.1.jar",
+            "sha256": "e9f00f787a78a976b8493eafeee63ff08fadb31bcb0a1e938d7b940d17ac70ae",
+            "url": "mods/modernfix-forge-5.26.2+mc1.20.1.jar"
+        },
+        {
+            "path": "mods/oculus-mc1.20.1-1.8.0.jar",
+            "sha256": "0945df0cba0f62b3901dd80c3268e5311b770ece78c78037a45db12ac0425fef",
+            "url": "mods/oculus-mc1.20.1-1.8.0.jar"
+        },
+        {
+            "path": "mods/offlineskins-1.20.1-v1.jar",
+            "sha256": "ac4eb2a373b83a0383cd89e5dbb763f61776415ccb6371ec168365a8ea1bcddf",
+            "url": "mods/offlineskins-1.20.1-v1.jar"
+        },
+        {
+            "path": "mods/tacz-1.20.1-1.1.7-hotfix2.jar",
+            "sha256": "fc5f1dab09afd5399604db0f60845d41d46cf015c158cbc12e7ef716cf6bdb46",
+            "url": "mods/tacz-1.20.1-1.1.7-hotfix2.jar"
+        },
+        {
+            "path": "mods/voicechat-forge-1.20.1-2.6.14.jar",
+            "sha256": "86b41d79e7ef1c211a60d28cafbc7fe37152f23ab268c0d12ab5ec411b47ba66",
+            "url": "mods/voicechat-forge-1.20.1-2.6.14.jar"
+        },
+        {
+            "path": "mods/worldedit-mod-7.2.15.jar",
+            "sha256": "17db6b3e94f52d25426684663e1e1846823cbb7907f1c365ac329e5bc7bfaf2c",
+            "url": "mods/worldedit-mod-7.2.15.jar"
+        },
+        {
+            "path": "mods/xaerominimap-forge-1.20.1-25.3.10.jar",
+            "sha256": "dd118045c4daa8e27614f576d515ba5b07e4ccae060b6b1a536437f155879c7b",
+            "url": "mods/xaerominimap-forge-1.20.1-25.3.10.jar"
+        },
+        {
+            "path": "mods/xaeroworldmap-forge-1.20.1-1.40.11.jar",
+            "sha256": "d41ea1366e36f79f1b38efb44920fa9354a929eee070c493bda60b0c5cc2b16a",
+            "url": "mods/xaeroworldmap-forge-1.20.1-1.40.11.jar"
+        },
+        {
+            "path": "resourcepacks/Default-Dark-Mode-1.20-2023.7.0.zip",
+            "sha256": "22a0ad68393273203649d058f1b7788cbdb08b38f6923cd9d6ade8ae33565dc6",
+            "url": "resourcepacks/Default-Dark-Mode-1.20-2023.7.0.zip"
+        },
+        {
+            "path": "resourcepacks/Soft-Weather-1.0-Universal.zip",
+            "sha256": "3f47ccac79c0c9ff2f723e4d8061f5881ca5323931be29f9009d42682cdcc1dd",
+            "url": "resourcepacks/Soft-Weather-1.0-Universal.zip"
+        },
+        {
+            "path": "shaderpacks/ComplementaryReimagined_r5.7.1.zip",
+            "sha256": "24a20634a7832d422d3cd5023be16829f26840e25c69404dd418306ea79f63f0",
+            "url": "shaderpacks/ComplementaryReimagined_r5.7.1.zip"
+        },
+        {
+            "path": "shaderpacks/MakeUp-UltraFast-9.4c.zip",
+            "sha256": "f88931d65e971807148d09b71ee4aa85e293184cac94405c7d84350b22cb91d9",
+            "url": "shaderpacks/MakeUp-UltraFast-9.4c.zip"
+        },
+        {
+            "path": "shaderpacks/MakeUp-UltraFast-9.4c.zip.txt",
+            "sha256": "8bf7594760f0936e3fb62a8e00ab136a9b74dc07d0dc0d60f52089684964219e",
+            "url": "shaderpacks/MakeUp-UltraFast-9.4c.zip.txt"
+        }
+    ]
+}
