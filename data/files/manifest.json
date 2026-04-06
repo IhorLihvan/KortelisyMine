@@ -124,31 +124,31 @@
             "name": "ftb-library-forge-2001.2.12.jar",
             "path": "mods/ftb-library-forge-2001.2.12.jar",
             "sha512": "6c2c88ce9e456197895b32a8995adf13a1923c5a35c967593308af1322bb47136fc92305f350544febcc05d0227d2a3f282d9e9d4c8ec5aacdc36176af78809b",
-            "type": "temp"
+            "type": "modification"
         },
         {
             "name": "ftb-teams-forge-2001.3.2.jar",
             "path": "mods/ftb-teams-forge-2001.3.2.jar",
             "sha512": "45f8980fa1cfcb7cd772f6a03abb0ac680f7c502dc569839e325553dcaa9105148a2c27a214cd1f1131f6b06bca957f8dd01dfb4a1ccb8e13d49502513480cae",
-            "type": "temp"
+            "type": "modification"
         },
         {
             "name": "offlineskins-1.20.1-v1.jar",
             "path": "mods/offlineskins-1.20.1-v1.jar",
             "sha512": "64abbd278033cc429e17bd2397138ba6e5c09e796fdc4866e07482035d18a990de3a0d4f6cf3e963257ffa65ecd5240bd8cffdb51d6f2d073d9cfa67b6db6b11",
-            "type": "temp"
+            "type": "modification"
         },
         {
             "name": "voicechat-forge-1.20.1-2.6.14.jar",
             "path": "mods/voicechat-forge-1.20.1-2.6.14.jar",
             "sha512": "aab74d15ec52100401daed97baf913e542e6a8e2f558259233bbc2705284a186b5ead98a319001b17852cd45726b6610c2e34ad7e534ba715eaf2698fcddb9ec",
-            "type": "temp"
+            "type": "modification"
         },
         {
             "name": "worldedit-mod-7.2.15.jar",
             "path": "mods/worldedit-mod-7.2.15.jar",
             "sha512": "2c41dcd9a622f948ed5409eecc485018fbf274945bdd1a9c0fdf4c4954f9a47dc311e6e0f9e445180d8b771e4a40947533d67bd66feb4ab8c8f87c2880dba7ef",
-            "type": "temp"
+            "type": "modification"
         },
         {
             "name": "Default-Dark-Mode-1.20-2023.7.0.zip",

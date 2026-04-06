@@ -37,6 +37,9 @@ for root, dirs, files in os.walk(ROOT_DIR):
             "type": "temp"
         }
 
+        if rel_path.startswith("mods/"):
+            entry['type'] = "modification"
+
         for i in optional_files_startwith:
             if rel_path.startswith(i):
                 entry["optional"] = True
