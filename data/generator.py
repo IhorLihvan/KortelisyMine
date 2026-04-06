@@ -5,7 +5,6 @@ import requests
 from loguru import logger
 
 ROOT_DIR = "files"
-raw_url = "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/files/"
 
 ignored_files = [
     "manifest.json"
@@ -35,7 +34,6 @@ for root, dirs, files in os.walk(ROOT_DIR):
             "name": file,
             "path": rel_path,
             "sha512": sha512_file(full_paht),
-            "url": raw_url+rel_path,
             "type": "temp"
         }
 
