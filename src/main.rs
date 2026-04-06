@@ -1,13 +1,15 @@
 use std::{fs, io::Write, path::Path};
 
 use serde::Deserialize;
-use sha2::{Sha256, Digest};
+use sha2::{Digest, Sha512};
 
 mod input;
 
+const RAW_URL: &'static str = "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/data/files/";
+
 fn hash_file(path: &str) -> Option<String> {
     let data = fs::read(path).ok()?;
-    let mut hasher = Sha256::new();
+    let mut hasher = Sha512::new();
     hasher.update(data);
     Some(format!("{:x}", hasher.finalize()))
 }
@@ -36,15 +38,15 @@ struct Manifest {
 #[derive(Deserialize)]
 struct FileEntry {
     path: String,
-    url: String,
-    sha256: String,
+    url: Option<String>,
+    sha512: String,
+    r#type: String,
     optional: Option<bool>
 }
 
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let url_path_ip = input::input_string("Ip to file server:");
-    let manifest_url = format!("http://{}:8000/manifest.json", url_path_ip);
+    let manifest_url = format!("{}manifest.json", RAW_URL);
 
     let mut update_count = 0;
     let mut delete_count = 0;
@@ -66,47 +68,51 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         } else {
             
             match hash_file(path) {
-                Some(local_hash) => local_hash != file.sha256 && !file.optional.unwrap(),
+                Some(local_hash) => local_hash != file.sha512 && !file.optional.unwrap_or(false),
                 None => true
             }
         };
         if needs_download {
-            download_file(format!("http://{}:8000/{}", url_path_ip, file.url).as_str(), path)?;
+            match &file.url {
+                Some(el) => download_file(el, path)?,
+                None => download_file(format!("{}{}", RAW_URL, path).as_str(), path)?
+            };
             update_count += 1;
+
         } else {
             println!("\x1b[32m Ok {} \x1b[37m", path);
         }
 
-        if rel_path.starts_with("mods") {
+        if &file.r#type == "modification" {
             mods.push(path.to_string());
         }
     }
     println!();
 
-    if let Ok(entries) = fs::read_dir("mods")  {
-        for entry in entries {
-            if let Ok(entry) = entry {
-                let ent = entry.path();
-                let path = ent.to_str().unwrap();
-                let mut index_found: Option<usize> = None;
+    // if let Ok(entries) = fs::read_dir("mods")  {
+    //     for entry in entries {
+    //         if let Ok(entry) = entry {
+    //             let ent = entry.path();
+    //             let path = ent.to_str().unwrap();
+    //             let mut index_found: Option<usize> = None;
 
-                for (i, pa) in mods.iter().enumerate() {
-                    if Path::new(pa) == path {
-                        index_found = Some(i);
-                        break;
-                    }
-                }
-                match index_found {
-                    Some(el) => {mods.remove(el);}
-                    None => {
-                        let _ = fs::remove_file(path);
-                        delete_count += 1;
-                        println!("\x1b[33mFile {} in mods has been deleted!\x1b[37m", path);
-                    }
-                }
-            }
-        }
-    }    
+    //             for (i, pa) in mods.iter().enumerate() {
+    //                 if Path::new(pa) == path {
+    //                     index_found = Some(i);
+    //                     break;
+    //                 }
+    //             }
+    //             match index_found {
+    //                 Some(el) => {mods.remove(el);}
+    //                 None => {
+    //                     let _ = fs::remove_file(path);
+    //                     delete_count += 1;
+    //                     println!("\x1b[33mFile {} in mods has been deleted!\x1b[37m", path);
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }    
 
     println!("\n\x1b[32m\u{1F600} Done!\x1b[37m\n");
     if update_count > 0 || delete_count > 0 {
