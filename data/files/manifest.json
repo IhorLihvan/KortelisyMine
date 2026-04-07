@@ -127,6 +127,12 @@
             "type": "modification"
         },
         {
+            "name": "standoff-1.0.0.jar",
+            "path": "mods/standoff-1.0.0.jar",
+            "sha512": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+            "type": "modification"
+        }
+        {
             "name": "ftb-teams-forge-2001.3.2.jar",
             "path": "mods/ftb-teams-forge-2001.3.2.jar",
             "sha512": "45f8980fa1cfcb7cd772f6a03abb0ac680f7c502dc569839e325553dcaa9105148a2c27a214cd1f1131f6b06bca957f8dd01dfb4a1ccb8e13d49502513480cae",
