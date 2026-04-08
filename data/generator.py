@@ -15,6 +15,11 @@ optional_files_startwith = [
     "config/"
 ]
 
+ignored_optional_files = [
+    "config/xaero/minimap/profiles/default.cfg",
+    "config/xaero/world-map/profiles/default.cfg"
+]
+
 def sha512_file(path):
     with open(path, 'rb') as f:
         return hashlib.sha512(f.read()).hexdigest()
@@ -41,7 +46,7 @@ for root, dirs, files in os.walk(ROOT_DIR):
             entry['type'] = "modification"
 
         for i in optional_files_startwith:
-            if rel_path.startswith(i):
+            if rel_path.startswith(i) and rel_path not in ignored_optional_files:
                 entry["optional"] = True
                 opt = True
 

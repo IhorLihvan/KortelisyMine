@@ -74,9 +74,8 @@
         {
             "name": "default.cfg",
             "path": "config/xaero/minimap/profiles/default.cfg",
-            "sha512": "209654f1c3d352fb967de823f3824faf1a51bbba6472951c6d2c3a4c47ca3f9c16dc2af43230adfba1d871db5d71b871530a5e694fc04a50d13c796cd0f60d67",
-            "type": "temp",
-            "optional": true
+            "sha512": "0a9221104b4886cf10d3d0e7f90bccc5a90116f7bd241a2bc87687ec7762e5eeb7ff4e177f05c7412e7382f7c5fc4ccf70f781e2de22023ba938592e49022498",
+            "type": "temp"
         },
         {
             "name": "default.cfg.txt",
@@ -109,9 +108,8 @@
         {
             "name": "default.cfg",
             "path": "config/xaero/world-map/profiles/default.cfg",
-            "sha512": "4d3dffbc0c96f17cc5673142af4038e55456c1d57f12d65416ce8fa349f001b13f91eae20d7369422bc0a6a67a623644f6fe5925327c0271266e65246e56d32b",
-            "type": "temp",
-            "optional": true
+            "sha512": "e01f70deb927c8fd34a9be93f8e502d39d30f8e836ab2f8810e58e7b325f87a03e4bddbd36b00a1a232c8df28d79edb113b616ec7c8f1d72b7158a23f24becf2",
+            "type": "temp"
         },
         {
             "name": "default.cfg",
@@ -127,12 +125,6 @@
             "type": "modification"
         },
         {
-            "name": "standoff-1.0.0.jar",
-            "path": "mods/standoff-1.0.0.jar",
-            "sha512": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-            "type": "modification"
-        },
-        {
             "name": "ftb-teams-forge-2001.3.2.jar",
             "path": "mods/ftb-teams-forge-2001.3.2.jar",
             "sha512": "45f8980fa1cfcb7cd772f6a03abb0ac680f7c502dc569839e325553dcaa9105148a2c27a214cd1f1131f6b06bca957f8dd01dfb4a1ccb8e13d49502513480cae",
@@ -142,6 +134,12 @@
             "name": "offlineskins-1.20.1-v1.jar",
             "path": "mods/offlineskins-1.20.1-v1.jar",
             "sha512": "64abbd278033cc429e17bd2397138ba6e5c09e796fdc4866e07482035d18a990de3a0d4f6cf3e963257ffa65ecd5240bd8cffdb51d6f2d073d9cfa67b6db6b11",
+            "type": "modification"
+        },
+        {
+            "name": "standoff-1.1.0.jar",
+            "path": "mods/standoff-1.1.0.jar",
+            "sha512": "c905cb344b8d6ce2fea9d9aa0d81f76c5761f2ed87658065fcc3311cc87c0347b26048d401ab5fcaa85a9dcecb806c51a1c7a6275b5614833b04c9b31412473a",
             "type": "modification"
         },
         {
