@@ -295,6 +295,13 @@
             "sha512": "6a0d959ed4bf76f08dcad0e6a360bda842d85386a05f510069eafbcc6b46b4216cdcfd9e377f82e4266b0f07e6b74118d8382af0bafcbdd65712f8a92f16e146",
             "path": "mods/valkyrienskies-120-2.4.11.jar",
             "type": "modification"
+        },
+        {
+            "name": "kotlin-for-forge",
+            "url": "https://cdn.modrinth.com/data/ordsPcFz/versions/Zsh14XeQ/kotlinforforge-4.12.0-all.jar",
+            "sha512": "767f40030ed4b370a3838fa65ae1b79974f31979342fff7cc834a0d5f39eb28612642519352ff2a1dd5226ce1f745f8b3156ee3625ffde01219137d064c1ee40",
+            "path": "mods/kotlinforforge-4.12.0-all.jar",
+            "type": "modification"
         }
     ]
 }
