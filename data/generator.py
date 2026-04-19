@@ -12,12 +12,14 @@ ignored_files = [
 
 optional_files_startwith = [
     "options.txt",
-    "config/"
+    "config/",
+    "shaderpacks/",
+    "resourcepacks/"
 ]
 
 ignored_optional_files = [
-    "config/xaero/minimap/profiles/default.cfg",
-    "config/xaero/world-map/profiles/default.cfg"
+    # "config/xaero/minimap/profiles/default.cfg",
+    # "config/xaero/world-map/profiles/default.cfg"
 ]
 
 def sha512_file(path):
