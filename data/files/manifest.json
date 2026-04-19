@@ -75,7 +75,8 @@
             "name": "default.cfg",
             "path": "config/xaero/minimap/profiles/default.cfg",
             "sha512": "0a9221104b4886cf10d3d0e7f90bccc5a90116f7bd241a2bc87687ec7762e5eeb7ff4e177f05c7412e7382f7c5fc4ccf70f781e2de22023ba938592e49022498",
-            "type": "temp"
+            "type": "temp",
+            "optional": true
         },
         {
             "name": "default.cfg.txt",
@@ -109,7 +110,8 @@
             "name": "default.cfg",
             "path": "config/xaero/world-map/profiles/default.cfg",
             "sha512": "e01f70deb927c8fd34a9be93f8e502d39d30f8e836ab2f8810e58e7b325f87a03e4bddbd36b00a1a232c8df28d79edb113b616ec7c8f1d72b7158a23f24becf2",
-            "type": "temp"
+            "type": "temp",
+            "optional": true
         },
         {
             "name": "default.cfg",
@@ -137,9 +139,9 @@
             "type": "modification"
         },
         {
-            "name": "standoff-1.1.0.jar",
-            "path": "mods/standoff-1.1.0.jar",
-            "sha512": "c905cb344b8d6ce2fea9d9aa0d81f76c5761f2ed87658065fcc3311cc87c0347b26048d401ab5fcaa85a9dcecb806c51a1c7a6275b5614833b04c9b31412473a",
+            "name": "standoff-1.2.0.jar",
+            "path": "mods/standoff-1.2.0.jar",
+            "sha512": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
             "type": "modification"
         },
         {
@@ -158,31 +160,36 @@
             "name": "Default-Dark-Mode-1.20-2023.7.0.zip",
             "path": "resourcepacks/Default-Dark-Mode-1.20-2023.7.0.zip",
             "sha512": "52012b320a1d6e7c5c1e391cd475cc8d733b954a99f227131c2a7271198b403c3e2ce06cbfacb61328936c7618792a6a6a6ce557a1f82bbf95232e19dec1306e",
-            "type": "temp"
+            "type": "temp",
+            "optional": true
         },
         {
             "name": "Soft-Weather-1.0-Universal.zip",
             "path": "resourcepacks/Soft-Weather-1.0-Universal.zip",
             "sha512": "d0fc4e1def1b44669df6e8e30e9a43b6eb1bbf8625166e0fa504f2b473c3d766e7a5280ec198268cfed7851d62b7ae5d67d925e944d3c54d296c7d684f4d02fb",
-            "type": "temp"
+            "type": "temp",
+            "optional": true
         },
         {
             "name": "ComplementaryReimagined_r5.7.1.zip",
             "path": "shaderpacks/ComplementaryReimagined_r5.7.1.zip",
             "sha512": "840149dd8aff5d5d06d0d5a4ea83d4ea7f72eab3cb2b02de513c1f3eaa6e4627f68d9c0915b86fa37edad73cafd4648f156f373da52810cd34c67d797e0f6aef",
-            "type": "temp"
+            "type": "temp",
+            "optional": true
         },
         {
             "name": "MakeUp-UltraFast-9.4c.zip",
             "path": "shaderpacks/MakeUp-UltraFast-9.4c.zip",
             "sha512": "c586c9e73512467140506f369668ef5c6b84122ed176d90e41016d11673e73c899bf8de3b7301d9e294f2aac36428fa87025047384420ca9673e5e5371881b21",
-            "type": "temp"
+            "type": "temp",
+            "optional": true
         },
         {
             "name": "MakeUp-UltraFast-9.4c.zip.txt",
             "path": "shaderpacks/MakeUp-UltraFast-9.4c.zip.txt",
             "sha512": "cdbce0b3be6204e15c34fe996e05f1cd8dd2d8dbb97be7d38fe49c37c0165bb5932991ee0fe6ba18fb0951746f8bd6bb5673aa1f2f4b2752a07d629b04dd82e0",
-            "type": "temp"
+            "type": "temp",
+            "optional": true
         },
         {
             "name": "ambientsounds",
