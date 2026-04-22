@@ -139,9 +139,9 @@
             "type": "modification"
         },
         {
-            "name": "standoff-1.3.1.jar",
-            "path": "mods/standoff-1.3.1.jar",
-            "sha512": "8299493bd485ab456eae06c87bc44afa60a5d1aefde43310fe108835cad880861d3796fc4e35e6fc66223616689c17b263e5802f7014a3edcd27493849c3dd68",
+            "name": "standoff-1.3.2.jar",
+            "path": "mods/standoff-1.3.2.jar",
+            "sha512": "eb190c8e056e14fdd3da5a7ab4a59ff54157dcd9589720dc324156820fd2366bc54dccd25f4efc00c42e06092f2b4c076b713ee9a922a7804ee5a12b3f620356",
             "type": "modification"
         },
         {
