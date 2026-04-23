@@ -4,10 +4,13 @@ import hashlib
 import requests
 from loguru import logger
 
+last_support_version_client = "1.0.0"
+
 ROOT_DIR = "files"
 
 ignored_files = [
-    "manifest.json"
+    "manifest.json",
+    "version.json"
 ]
 
 optional_files_startwith = [
@@ -17,7 +20,7 @@ optional_files_startwith = [
     "resourcepacks/"
 ]
 
-ignored_optional_files = [
+ignored_optional_files_must_overwrite = [
     # "config/xaero/minimap/profiles/default.cfg",
     # "config/xaero/world-map/profiles/default.cfg"
 ]
@@ -48,7 +51,7 @@ for root, dirs, files in os.walk(ROOT_DIR):
             entry['type'] = "modification"
 
         for i in optional_files_startwith:
-            if rel_path.startswith(i) and rel_path not in ignored_optional_files:
+            if rel_path.startswith(i) and rel_path not in ignored_optional_files_must_overwrite:
                 entry["optional"] = True
                 opt = True
 
@@ -82,8 +85,20 @@ manifest = {
     "files": file_list
 }
 
-with open(os.path.join(ROOT_DIR, "manifest.json"), 'w') as f:
-    json.dump(manifest, f, indent=4)
+try:
+    path_to_manifest = os.path.join(ROOT_DIR, "manifest.json")
+    with open(path_to_manifest, 'w') as f:
+        json.dump(manifest, f, indent=4)
 
-logger.success("manifest.json successfuly generated")
+    with open(os.path.join(ROOT_DIR, "version.json"), 'w') as f:
+        version_data = {
+            "manifest_sha512": sha512_file(path_to_manifest),
+            "version": last_support_version_client
+        }
+        json.dump(version_data, f, indent=4)
+
+    logger.success("manifest.json successfuly generated")
+except Exception as e:
+    logger.error("Error while writing manifest.json, version.json")
+
 input()

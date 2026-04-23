@@ -256,9 +256,9 @@
         },
         {
             "name": "modernfix",
-            "url": "https://cdn.modrinth.com/data/nmDcB62a/versions/OvpPdk44/modernfix-forge-5.27.8%2Bmc1.20.1.jar",
-            "sha512": "8909ac7ec2a775add9eb11a80b29263e7780a99fcb277befca62470f5b25ff05fcfcc1e2e4ac2efbb156133580526e0e19419da61c8942ce07285d087a7b929d",
-            "path": "mods/modernfix-forge-5.27.8+mc1.20.1.jar",
+            "url": "https://cdn.modrinth.com/data/nmDcB62a/versions/eYMgSQpS/modernfix-forge-5.27.12%2Bmc1.20.1.jar",
+            "sha512": "8f0067684f5b905644531a02f2bd1f2c0a5a42baa73b4eed3c796a3d41c27f11a170e8870fc94a7f31fbc2144487b2b1d7e1a8cc22dca566b23b0983c36f8317",
+            "path": "mods/modernfix-forge-5.27.12+mc1.20.1.jar",
             "type": "modification"
         },
         {
