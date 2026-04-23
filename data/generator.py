@@ -88,10 +88,10 @@ manifest = {
 
 try:
     path_to_manifest = os.path.join(ROOT_DIR, "manifest.json")
-    with open(path_to_manifest, 'w') as f:
+    with open(path_to_manifest, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(manifest, f, indent=4)
 
-    with open(os.path.join(ROOT_DIR, "version.json"), 'w') as f:
+    with open(os.path.join(ROOT_DIR, "version.json"), 'w', encoding='utf-8', newline='\n') as f:
         version_data = {
             "manifest_sha512": sha512_file(path_to_manifest),
             "version": last_support_version_client,
