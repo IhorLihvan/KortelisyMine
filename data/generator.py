@@ -5,6 +5,7 @@ import requests
 from loguru import logger
 
 last_support_version_client = "1.0.0"
+min_client_version = "1.0.0"
 
 ROOT_DIR = "files"
 
@@ -93,7 +94,8 @@ try:
     with open(os.path.join(ROOT_DIR, "version.json"), 'w') as f:
         version_data = {
             "manifest_sha512": sha512_file(path_to_manifest),
-            "version": last_support_version_client
+            "version": last_support_version_client,
+            "min_client_version": min_client_version
         }
         json.dump(version_data, f, indent=4)
 
