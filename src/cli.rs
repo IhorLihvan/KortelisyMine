@@ -1,6 +1,5 @@
 use std::io::Write;
 use std::process::exit;
-use std::vec;
 
 pub fn input() -> String {
     let mut p: String = String::new();
@@ -21,7 +20,7 @@ pub fn stop_work_and_output(pr: &str) {
 }
 
 pub fn confim_input(pr: &str) -> bool {
-    let confirm_rec = input_string(&format!("{}(y, N):", pr));
+    let confirm_rec = input_string(&format!("{}(y, N):", pr)).to_lowercase();
     let confirm_options = ["y", "yes", "yup"];
     confirm_options.iter().any(|el| *el == confirm_rec)
 }

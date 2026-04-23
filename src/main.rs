@@ -1,14 +1,13 @@
 use std::{fs, io::Write, path::Path};
 use colored::Colorize;
-use reqwest::blocking::Response;
-use std::thread;
-use std::time::Duration;
-use sha2::{Digest, Sha512};
 use indicatif::ProgressBar;
+use std::collections::HashSet;
 
 mod data;
 mod cli;
+mod hashsum;
 
+use hashsum::{FileCache, hash_file_sha512};
 use data::*;
 
 const RAW_URL: &'static str = "https://raw.githubusercontent.com/IhorLihvan/KortelisyMine/data/data/files/";
@@ -24,16 +23,9 @@ fn check_valid_version(version: &String) -> bool {
     true
 }
 
-fn hash_file_sha512(path: &str) -> Option<String> {
-    let data = fs::read(path).ok()?;
-    let mut hasher = Sha512::new();
-    hasher.update(data);
-    Some(format!("{:x}", hasher.finalize()))
-}
+
 
 fn download_file(url: &str, path: &str) -> Result<(), Box<dyn std::error::Error>> {
-    println!("Downloading {} on {}", path, url);
-
     let respone = reqwest::blocking::get(url)?;
     let bytes = respone.bytes()?;
 
@@ -46,14 +38,14 @@ fn download_file(url: &str, path: &str) -> Result<(), Box<dyn std::error::Error>
     Ok(())
 }
 
-fn check_for_updates(version_data: Response) -> bool {
-    let remote_version: Version = version_data.json::<Version>().unwrap();
+fn check_for_updates(version_data: String) -> bool {
+    let remote_version: Version = serde_json::from_str(&version_data).unwrap();
 
     if !check_valid_version(&remote_version.version) {
         cli::stop_work_and_output(&format!("{}", "New Version of Manifest, update your Client Minecraft updater".yellow()));
     }
 
-    if fs::exists("manifest.json").unwrap() {
+    if Path::new("manifest.json").exists() {
         let hash_local = hash_file_sha512("manifest.json").unwrap();
 
         if remote_version.manifest_sha512 == hash_local {
@@ -63,23 +55,25 @@ fn check_for_updates(version_data: Response) -> bool {
     true
 }
 
+fn save_manifest(manifest_data: Vec<u8>) {
+    fs::write("manifest.json", manifest_data).unwrap_or_else(|_| println!("Don`t saved version"));
+}
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let version_url: String = format!("{}version.json", RAW_URL);
     let manifest_url = format!("{}manifest.json", RAW_URL);
+
     println!("Checking for updates.");
 
-    let version_remote_data = match reqwest::blocking::get(&version_url) {
-        Ok(flx) => flx,
+    let version_remote_text = match reqwest::blocking::get(&version_url) {
+        Ok(flx) => flx.text().unwrap(),
         Err(e) => {
             cli::stop_work_and_output(&format!("{}\n{}", "Unxpected Error, maybe check your internet connection".red(), e.to_string()));
             panic!("Process stopped");
         }
     };
 
-    version_remote_data.text();
-
-    if !check_for_updates(version_remote_data) {
+    if !check_for_updates(version_remote_text) {
         println!("{}", "Updates not found".green());
         if !cli::confim_input("Continue installing") {
             cli::stop_work_and_output("");
@@ -90,9 +84,13 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut delete_count = 0;
     let mut files_to_update: Vec<FileEntry> = Vec::new();
     let mut mods: Vec<String> = Vec::new();
+    let mut file_to_delete: Vec<String> = Vec::new();
+    let mut ignored_files: IgnoredFiles = IgnoredFiles::load();
+    let mut file_cache = FileCache::load();
 
     println!("Fetching updates...");
-    let manifest: Manifest = reqwest::blocking::get(&manifest_url).unwrap().json().unwrap();
+    let manifest_file  = reqwest::blocking::get(&manifest_url).unwrap().bytes().unwrap().to_vec();
+    let manifest: Manifest = serde_json::from_slice(&manifest_file).unwrap();
     println!("Received successfully.");
 
     for file in manifest.files {
@@ -102,9 +100,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         let needs_download = if !rel_path.exists() {
             true
         } else {
-            match hash_file_sha512(path) {
-                Some(local_hash) => local_hash != file.sha512 && !file.optional.unwrap_or(false),
-                None => true
+            match file_cache.get_hash(path) {
+                local_hash => local_hash != file.sha512 && !file.optional.unwrap_or(false),
             }
         };
 
@@ -113,7 +110,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         }
 
         if needs_download {
-            println!("{} {}", "found to install".green(), &file.name);
+            println!("{}{}", "To install ".green(), &file.name);
             files_to_update.push(file);
         } else {
             println!("{} {}", "Ok".yellow(), &file.name);
@@ -121,17 +118,19 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
         
     }
+    
 
-    if files_to_update.len()>0 {
+    if files_to_update.len() > 0 {
         if cli::confim_input(&format!("Confirm update {} files", files_to_update.len())) {
             let steps = files_to_update.len();
-            let pb = ProgressBar::new(steps as u64);
+            let pb = ProgressBar::new(steps as u64).with_message("down:");
 
             for file in files_to_update {
                 match &file.url {
                     Some(el) => download_file(el, &file.path)?,
                     None => download_file(format!("{}{}", RAW_URL, &file.path).as_str(), &file.path)?
                 };
+                file_cache.get_hash(&file.path);
                 update_count+=1;
                 pb.inc(1);
             }
@@ -140,56 +139,49 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         }
     }
 
-    // println!();
-    // let mut file_to_delete: Vec<String> = Vec::new();
+    file_cache.save();
+    save_manifest(manifest_file);
+    
+    let mods_set: HashSet<_> = mods.into_iter().collect();
 
-    // if let Ok(entries) = fs::read_dir("mods")  {
-    //     for entry in entries {
-    //         if let Ok(entry) = entry {
-    //             let ent = entry.path();
-    //             let path = ent.to_str().unwrap();
-    //             let mut index_found: Option<usize> = None;
+    if let Ok(entries) = fs::read_dir("mods") {
+        for entry in entries.flatten() {
+            let path_buf = entry.path();
+            
+            let path_str = path_buf.to_str().unwrap().replace("\\", "/");
 
-    //             for (i, pa) in mods.iter().enumerate() {
-    //                 if Path::new(pa) == path {
-    //                     index_found = Some(i);
-    //                     break;
-    //                 }
-    //             }
-    //             match index_found {
-    //                 Some(el) => {mods.remove(el);}
-    //                 None => {
-    //                     file_to_delete.push(path.to_string());
-    //                     delete_count += 1;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-    // if delete_count > 0 {
-    //     println!("Found {} files in mods folder, please make sure you save them to contiune", delete_count);
-    //     let first_conf = cli::input_string("Delete files(N, y):");
-    //     if first_conf.to_lowercase() == "y" {
-    //         let second_conf = cli::input_string("You sure(N, y):");
+            if ignored_files.is_ignored(&path_str) { continue; }
 
-    //         if first_conf.to_lowercase() == second_conf.to_lowercase() && first_conf.to_lowercase() == "y" {
-    //         for path in file_to_delete {
-    //             let _ = fs::remove_file(path.as_str());
-    //             println!("\x1b[33mFile {} in mods has been deleted!\x1b[37m", path);
-    //         }
-    //     }
-    //     }
-        
+            if !mods_set.contains(&path_str) {
+                file_to_delete.push(path_str);
+            }
+        }
+    }
 
-        
-    // }
+    if file_to_delete.len() > 0 {
+        println!("Found {} files in mods folder, please make sure you save them to contiune", file_to_delete.len());
 
-    // println!("\n\x1b[32m\u{1F600} Done!\x1b[37m\n");
-    // if update_count > 0 || delete_count > 0 {
-    //     println!("Installed {} files | Deleted files {}", update_count, delete_count);
-    // } else {
-    //     println!("No updates available!")
-    // }
+        if cli::confim_input("Start") {
+            for path in file_to_delete {
+                    let conf = cli::input_string(&format!("Delete {} (y, ignore):", path));
+                    if conf == "y" {
+                        let _ = fs::remove_file(path.as_str());
+                        delete_count+=1;
+                        println!("File {} in mods has been deleted!", path);
+                    } else if conf == "ignore" {
+                        ignored_files.put(path);
+                    }
+                
+            }
+            ignored_files.save();
+        }
+    }
+    
+    if update_count > 0 || delete_count > 0 {
+        println!("Installed {} files | Deleted files {}", update_count, delete_count);
+    }
+
+    println!("{}", "Done!".bold().green());
 
     cli::input();
     Ok(())
