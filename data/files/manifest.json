@@ -139,6 +139,12 @@
             "type": "modification"
         },
         {
+            "name": "ParCool-CompatibilityAddon-1.20.1-3.4.1.5-1.1.jar",
+            "path": "mods/ParCool-CompatibilityAddon-1.20.1-3.4.1.5-1.1.jar",
+            "sha512": "0ce3130a88674c22a2e17d549b40bed09ea004b8787d340d0a00bc6a9ea57b67f720c837ca78562a3b16bd9681e470f5e14674a7fc41a1923b4c0abd018d6e7c",
+            "type": "modification"
+        },
+        {
             "name": "standoff-1.3.2.jar",
             "path": "mods/standoff-1.3.2.jar",
             "sha512": "3aa072b1a61dccb2def57ef576b5e9773c09e4750a23562796f6580597238fe4a8dcb9b5ad9e020632384fd59b19dc5fd261f73321e4622710a50ecc886dab50",
@@ -193,9 +199,9 @@
         },
         {
             "name": "ambientsounds",
-            "url": "https://cdn.modrinth.com/data/fM515JnW/versions/viZ543s0/AmbientSounds_FORGE_v6.3.4_mc1.20.1.jar",
-            "sha512": "ae49643430fd3d8b2efd295db912c79eb557b470c99cfa0d3cb38fa27cf5fa42b7db20bd85c877469db3bae000c11329e94adf44da60438c36c95a296e1bc49b",
-            "path": "mods/AmbientSounds_FORGE_v6.3.4_mc1.20.1.jar",
+            "url": "https://cdn.modrinth.com/data/fM515JnW/versions/6Xww20gc/AmbientSounds_FORGE_v6.3.6_mc1.20.1.jar",
+            "sha512": "9bc31df240dbb7526ca379424abc39d0be98a1c00c3dbb8c48da4882134ea7e8afd957e60fef04ece756f8b935b5c9eb7e0187ce2546d6358d2bcac3434210cb",
+            "path": "mods/AmbientSounds_FORGE_v6.3.6_mc1.20.1.jar",
             "type": "modification"
         },
         {
@@ -214,9 +220,9 @@
         },
         {
             "name": "creativecore",
-            "url": "https://cdn.modrinth.com/data/OsZiaDHq/versions/p6pvilEm/CreativeCore_FORGE_v2.12.35_mc1.20.1.jar",
-            "sha512": "e3b00bc24856aaf931392f7bf2fdab8c492341ff2654fa513e0fef6df89927db7441b740ab8583d89e6b03d503e2ded656429491c464df3da6e16a004be94823",
-            "path": "mods/CreativeCore_FORGE_v2.12.35_mc1.20.1.jar",
+            "url": "https://cdn.modrinth.com/data/OsZiaDHq/versions/FjfVIHYH/CreativeCore_FORGE_v2.12.36_mc1.20.1.jar",
+            "sha512": "7099d619d81c13dba60eafc6883ff241852b955f4f453509e23ccb42de6488e6843124c642224e65aefd5ef33e5c203d3df8edddd4014bbf410dea5bf0496d27",
+            "path": "mods/CreativeCore_FORGE_v2.12.36_mc1.20.1.jar",
             "type": "modification"
         },
         {
@@ -294,6 +300,13 @@
             "url": "https://cdn.modrinth.com/data/LNytGWDc/versions/8amzvn9x/create-1.20.1-6.0.8.jar",
             "sha512": "5b51f5d31437d9bfbf221b67459abd87260d284874e1e23b7ed1d522b23a48059a3b1d2c1c541428da35dc6be15561b4f3c7f36aac6df3a0e8db6a278f6b0316",
             "path": "mods/create-1.20.1-6.0.8.jar",
+            "type": "modification"
+        },
+        {
+            "name": "parcool",
+            "url": "https://cdn.modrinth.com/data/Fsvx2bdR/versions/uEY441aP/ParCool-1.20.1-3.4.3.3.jar",
+            "sha512": "42f4da16b008343e39b7df17b8d52b8fc04ba6d52b2ea5deaeb7eb7cd19b70dc9d955d3e71d1357988d0e7ba05089dd1617e303ffdc7482357d1df98ac6f688a",
+            "path": "mods/ParCool-1.20.1-3.4.3.3.jar",
             "type": "modification"
         }
     ]
